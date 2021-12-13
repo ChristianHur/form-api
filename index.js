@@ -2,7 +2,7 @@ const express = require('express')
 const app = express();
 const cors = require('cors');
 const { urlencoded } = require('express');
-const port = process.env.port || 9000;
+const port = process.env.PORT || 9000;
 app.listen(port, () => console.log(`http://localhost:${port}`))
 app.use(cors())
 
