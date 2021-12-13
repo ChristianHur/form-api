@@ -2,6 +2,8 @@
 
 This is a simple app to test form submissions or CRUD operations.
 
+This API is deployed on heroku here:  https://hur-form-api.herokuapp.com/api
+
 Nothing is really saved to any permanent data store.
 
 Send your form data or api calls to the following API endpoints:
