@@ -2,7 +2,7 @@ const express = require('express')
 const app = express();
 const cors = require('cors');
 const { urlencoded } = require('express');
-const port = process.env.PORT || 9000;
+const port = process.env.port || 9000;
 app.listen(port, () => console.log(`http://localhost:${port}`))
 app.use(cors())
 
@@ -10,8 +10,11 @@ app.use(cors())
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// Static files
+app.use(express.static(__dirname + '/public'));
+
 app.get('/', (req, res) => {
-    res.json('YAH')
+    res.sendFile('index.html')
 })
 
 app.post('/api/', (req, res) => {
