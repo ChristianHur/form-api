@@ -13,7 +13,7 @@ Send your form data or api calls to the following API endpoints:
 |`GET`| `https://hur-form-api.herokuapp.com/api/<id>` | Get a single record where `<id>` is an integer.  
 |||```Example:  /api/123```
 |`POST`| `https://hur-form-api.herokuapp.com/api/` | Add new record
-|`PUT`| `https://hur-form-api.herokuapp.com/api/<id>` | Update date where `<id>` is an integer
+|`PUT`| `https://hur-form-api.herokuapp.com/api/<id>` | Update a single record where `<id>` is an integer
 |`DELETE`| `https://hur-form-api.herokuapp.com/api/` | Delete all records
 |`DELETE`| `https://hur-form-api.herokuapp.com/api/<id>` | Delete a single record where `<id>` is an integer
 
